@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sac</title>
+    <link rel="stylesheet" href="sac2.css">
+</head>
+<body>
+       <header class="header">
+        <section>
+            <div class="logo">
+               <li><a href="#home"><img src="imagi/laaço2.png" alt="Laço"></a></li> 
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#perguntas">Perguntas frequentes</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <section id="#perguntas">
+  <div class="faq">
+  <div class="faq-item">
+    <button class="faq-pergunta" onclick="toggleFaq(this)">
+      Quais são as funções que um cuidador não desempenha?
+      <span class="faq-seta">+</span>
+    </button>
+    <div class="faq-resposta">
+      <p>O cuidador não desempenha funções de trabalhos domésticos. Eles não cozinham, não lavam, não passam roupas e nem fazem faxina nas residências.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-pergunta" onclick="toggleFaq(this)">
+      Como são admiministrados nossos cuidadores
+      <span class="faq-seta">+</span>
+    </button>
+    <div class="faq-resposta">
+      <p></p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-pergunta" onclick="toggleFaq(this)">
+      O cuidador fica disponível 24 horas?
+      <span class="faq-seta">+</span>
+    </button>
+    <div class="faq-resposta">
+      <p>Sim, temos opções de cuidadores para períodos diurnos, noturnos e também plantão 24 horas, conforme a necessidade do contratante.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-pergunta" onclick="toggleFaq(this)">
+      Os cuidadores são capacitados?
+      <span class="faq-seta">+</span>
+    </button>
+    <div class="faq-resposta">
+      <p>Todos os nossos cuidadores passam por treinamento e avaliação antes de serem indicados, garantindo segurança e qualidade no atendimento.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  function toggleFaq(btn) {
+    var item = btn.parentElement;
+    item.classList.toggle("aberto");
+  }
+</script>
+</body>
+</html>

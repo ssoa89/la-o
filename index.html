@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laço</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+   <header class="header">
+        <section>
+            <div class="logo">
+               <li><a href="#home"><img src="imagi/laaço2.png" alt="Laço"></a></li> 
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#trabalhos">trabalhos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#perguntas">Perguntas</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+
+    <main>
+        <section id="home">
+            <div class="home">
+                <div class="slider-container">
+                    <div class="slider-track" id="track">
+   
+                        <div class="slide"><img src="imagi/1.png" alt="Slide 1"></div>
+                        <div class="slide"><img src="imagi/2.png" alt="Slide 2"></div>
+                        <div class="slide"><img src="imagi/3.png" alt="Slide 3"></div>
+                        <div class="slide"><img src="imagi/4.png" alt="Slide 4"></div>
+                        <div class="slide"><img src="imagi/5.png" alt="Slide 4"></div>
+                    </div>
+
+                    <button class="btn btn-prev" onclick="mudar(-1)">&#8592;</button>
+                    <button class="btn btn-next" onclick="mudar(1)">&#8594;</button>
+ 
+                    <div class="dots" id="dots"></div>
+                </div>
+            </div>
+        </section>
+
+       <section id="trabalhos">
+            
+            <h2 class="faq-titulo">Trabalhos</h2>
+            <p class="faq-subtitulo">Solicite trabalhos conforme suas necessidades.</p>
+            <div class="centralizar">
+            
+                <div class="card">
+                    <img src="imagi/velho1.jpeg">
+                    <h3>Cuidados Domiciliares</h3>
+                    <p>Oferecemos serviços de cuidados domiciliares, incluindo assistência com tarefas diárias.</p>
+                </div>
+
+                <div class="card">
+                    <img src="imagi/velho1.jpeg">
+                    <h3>Higiene Pessoal</h3> 
+                    <p>Auxiliamos os idosos com banho, troca de roupas, cuidados com a higiene e conforto diário, sempre com respeito e atenção.</p>
+                </div>
+            
+
+            
+                <div class="card">
+                    <img src="imagi/velho1.jpeg">
+                    <h3>Administração de Medicamentos</h3>
+                    <p>Ajudamos na organização e administração correta dos medicamentos conforme orientação médica e horários definidos.</p>
+                </div>
+
+            </div>
+            
+            <div class="centralizar">
+
+                <div class="card">
+                    <img src="imagi/velho1.jpeg">
+                    <h3>Acompanhamento em Consultas</h3>
+                    <p>Oferecemos acompanhamento em consultas médicas, exames e passeios, garantindo segurança e apoio durante o trajeto.</p>
+                </div>
+
+                <div class="card">
+                    <img src="imagi/velho1.jpeg">
+                    <h3>Companhia e Socialização</h3>
+                    <p>Promovemos momentos de conversa, lazer e interação para estimular o bem-estar emocional e evitar o isolamento.</p>
+                </div>
+            
+                <div class="card">
+                    <img src="imagi/velho1.jpeg">
+                    <h3>Preparação de Refeições</h3>
+                    <p>Preparamos refeições simples e saudáveis, respeitando as necessidades alimentares e recomendações médicas do idoso.</p>
+                </div>
+            </div>
+
+            <div class="centralizar">
+                <div class="card">
+                    <img src="imagi/velho1.jpeg">
+                    <h3>Cuidados Noturnos</h3>
+                    <p>Realizamos acompanhamento noturno para garantir conforto, segurança e assistência em qualquer necessidade durante a noite.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+<!--PERGUNTAS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+    <section id="perguntas">
+
+<h2 class="faq-titulo">Perguntas frequentes</h2>
+<p class="faq-subtitulo">Tire suas dúvidas sobre nossos cuidadores</p>
+
+<div class="faq">
+  <div class="faq-item">
+    <button class="faq-pergunta" onclick="toggleFaq(this)">
+      Quais são as funções que um cuidador não desempenha?
+      <span class="faq-seta">+</span>
+    </button>
+    <div class="faq-resposta">
+      <p>O cuidador não desempenha funções de trabalhos domésticos. Eles não cozinham, não lavam, não passam roupas e nem fazem faxina nas residências.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-pergunta" onclick="toggleFaq(this)">
+      Como são administrados nossos cuidadores?
+      <span class="faq-seta">+</span>
+    </button>
+    <div class="faq-resposta">
+      <p>Nossa equipe acompanha de perto cada cuidador, garantindo qualidade, pontualidade e bem-estar tanto para o cuidador quanto para o idoso atendido.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-pergunta" onclick="toggleFaq(this)">
+      O cuidador fica disponível 24 horas?
+      <span class="faq-seta">+</span>
+    </button>
+    <div class="faq-resposta">
+      <p>Sim, temos opções de cuidadores para períodos diurnos, noturnos e também plantão 24 horas, conforme a necessidade do contratante.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-pergunta" onclick="toggleFaq(this)">
+      Os cuidadores são capacitados?
+      <span class="faq-seta">+</span>
+    </button>
+    <div class="faq-resposta">
+      <p>Todos os nossos cuidadores passam por treinamento e avaliação antes de serem indicados, garantindo segurança e qualidade no atendimento.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+        <footer class="footer">
+            <div class="footer-container">
+                
+                <!-- Logo -->
+                <div class="footer-logo">
+                <img src="" alt="">
+                </div>
+
+                <!-- Contatos -->
+                <div class="footer-contact">
+                    <h3>CONTATOS</h3>
+                    <p>55 11 99972-4272</p>
+
+                    <h3 class="social-title">SIGA-NOS NAS REDES</h3>
+
+                    <div class="social">
+                        <a href="#"><i class="fab fa-instagram"> </i></a>
+                    </div>
+
+
+                </div>
+
+                <!-- Endereço + mapa -->
+                <div class="footer-location">
+
+                    <p>
+                    Escola Técnica Estadual de Guaianazes, Rua Feliciano de Mendonça 290, São Paulo <br>
+                    São Paulo, 08460-365<br>
+                    </p>
+
+                </div>
+            </div>
+        </footer>
+            
+            </main>       
+    
+
+
+
+
+
+         <script>
+            var atual = 0;
+            var total = 5; // <- era 4, você tem 5 slides
+            var track = document.getElementById("track");
+            var dotsContainer = document.getElementById("dots");
+            for (var i = 0; i < total; i++) {
+            var dot = document.createElement("div");
+            dot.className = "dot" + (i === 0 ? " active" : "");
+            dot.setAttribute("data-i", i);                dot.onclick = function() { irPara(parseInt(this.getAttribute("data-i"))); };
+            dotsContainer.appendChild(dot);
+            }
+            function irPara(index) {
+            atual = index;
+            track.style.transform = "translateX(-" + (atual * 100) + "%)"; // <- usa % agora
+            var dots = document.querySelectorAll(".dot");                for (var i = 0; i < dots.length; i++) {
+                dots[i].className = "dot" + (i === atual ? " active" : "");
+            }
+            }
+            function mudar(direcao) {
+            atual = (atual + direcao + total) % total;
+            irPara(atual);
+            }
+
+            setInterval(function() { mudar(1); }, 9000);
+
+              function toggleFaq(btn) {
+    var item = btn.parentElement;
+    item.classList.toggle("aberto");
+  }
+        </script>
+        
+        
+</body>
+</html>
